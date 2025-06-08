@@ -1,0 +1,92 @@
+[ JavaScript Basics ] 
+
+1.  Variables in JavaScript.
+
+-   Variables are containers for data. You store data in a variable so you can reuse or manipulate it.   
+
+| Keyword | Can reassign?                                                              | Scope            |
+| ------- | -------------------------------------------------------------------------- | ---------------- |
+| `var`   | Yes                                                                        | Function scope   |
+| `let`   | Yes                                                                        | Block scope `{}` |
+| `const` | No (value can't be reassigned, but object/array properties can be mutated) | Block scope `{}` |
+
+2.  Data Types in JavaScript.
+
+-   Primitive Data types:
+    
+    In JavaScript, primitive data types are the most basic data types, representing single 
+    values and lacking properties or methods. They are immutable, meaning their values cannot 
+    be changed after creation. These types are stored directly in the stack memory, which is 
+    faster to access than the heap. 
+
+    | Type      | Example         |
+    | --------- | --------------- |
+    | String    | `"Hello"`       |
+    | Number    | `42`, `3.14`    |
+    | Boolean   | `true`, `false` |
+    | Undefined | `let x;`        |
+    | Null      | `let x = null;` |
+    | Symbol    | `Symbol("id")`  |
+
+
+3.  Operators in JavaScript.
+
+->  Arithmetic Operators: 
+
+    Arithmetic Operators in JS are used to perform math operations.
+
+    | Operator        | Example  | Result |
+    | --------------- | -------- | ------ |
+    | `+`             | `5 + 3`  | `8`    |
+    | `-`             | `5 - 3`  | `2`    |
+    | `*`             | `5 * 3`  | `15`   |
+    | `/`             | `6 / 3`  | `2`    |
+    | `%` (modulus)   | `5 % 3`  | `2`    |
+    | `**` (exponent) | `2 ** 3` | `8`    |
+
+->  Comparison Operators: 
+    
+    Comparison Operators in JS are used to compare two values -- returns true or false.  
+
+    | Operator | Meaning                      | Example               |
+    | -------- | ---------------------------- | --------------------- |
+    | `==`     | equal (loose)                | `5 == '5'` → `true`   |
+    | `===`    | equal (strict, type + value) | `5 === '5'` → `false` |
+    | `!=`     | not equal (loose)            | `5 != '5'` → `false`  |
+    | `!==`    | not equal (strict)           | `5 !== '5'` → `true`  |
+    | `>`      | greater than                 | `5 > 3` → `true`      |
+    | `<`      | less than                    | `5 < 3` → `false`     |
+    | `>=`     | greater or equal             | `5 >= 5` → `true`     |
+    | `<=`     | less or equal                | `5 <= 4` → `false`    |
+
+    Important: 👉 Always prefer === and !== over == and != to avoid type coercion bugs!
+
+->  Logical Operators:
+
+    Logical Operators in JS are used to combine conditions.
+
+    | Operator | Meaning                    | Example                  |
+    | -------- | -------------------------- | -----------------------  |
+    | `&&`     | AND (both true)            | `true && true` → `true`  |
+    | `||`     | OR  (Either one is true)   | `true || false` → `true` |
+    | `!`      | NOT (negate)               | `!true` → `false`        |
+
+->  Assignment Operators:
+
+    Assignment operators in JavaScript are used to assign values to variables. The most basic 
+    assignment operator is the equals sign (=), which assigns the value on the right to the 
+    variable on the left. 
+
+    | Operator | Example  | Equivalent to |
+    | -------- | -------- | ------------- |
+    | `=`      | `x = 5`  | assign 5      |
+    | `+=`     | `x += 2` | `x = x + 2`   |
+    | `-=`     | `x -= 2` | `x = x - 2`   |
+    | `*=`     | `x *= 2` | `x = x * 2`   |
+    | `/=`     | `x /= 2` | `x = x / 2`   |
+
+    There are also compound assignment operators, which combine an arithmetic or bitwise 
+    operation with assignment. These operators perform the operation on the variable and the 
+    value on the right, and then assign the result back to the variable.
+
+    Example: +=, -=, *=, /= etc.
