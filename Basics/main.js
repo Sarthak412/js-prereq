@@ -109,3 +109,61 @@ console.log((x *= 5));
 
 let y = 10;
 console.log((y /= 5));
+
+// ? Conditionals in JavaScript
+
+// 1. 'if' statement in JavaScript: Used to run a block of code if a condition is true.
+
+let myAge = 24;
+
+if (myAge >= 18) {
+  console.log(`You are ${myAge} years old. You are an Adult.`);
+}
+
+// 2. 'if...else' statement in JavaScript.
+
+if (myAge >= 18) {
+  console.log(`You are eligible for voting.`);
+} else {
+  console.log(`You are not eligible for voting`);
+}
+
+// 3. 'if...else if...else' in JavaScript: This is used to check multiple conditions in JavaScript.
+
+const totalMarks = 90;
+
+if (totalMarks >= 90) {
+  console.log(`Grade A`);
+} else if (totalMarks >= 80) {
+  console.log(`Grade B`);
+} else if (totalMarks >= 70) {
+  console.log(`Grade C`);
+} else {
+  console.log(`Grade D`);
+}
+
+// 4. Ternary operator (? :) in JavaScript: Ternary Operator in JavaScript is a shorthand for if...else.
+
+// ? Syntax: condition ? value_if_true : value_if_false
+
+let isActiveUser = true;
+
+let message = isActiveUser
+  ? `${alias} you are an active user.`
+  : `${alias} you are not an active user.`;
+
+// console.log(message);
+
+// 5. Nested Conditonals: You can nest 'if' inside another 'if'.
+
+let isStudent = true;
+
+if (myAge >= 18) {
+  if (isStudent) {
+    console.log(`Student Discount is available on your ticket.`);
+  } else {
+    console.log(`You are an adult discount is not available on your ticket.`);
+  }
+} else {
+  console.log(`Minor Ticket.`);
+}

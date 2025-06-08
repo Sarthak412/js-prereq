@@ -90,3 +90,24 @@
     value on the right, and then assign the result back to the variable.
 
     Example: +=, -=, *=, /= etc.
+
+
+4.  Conditionals in JavaScript.
+
+-   In Programming, conditionals allow your program to make decisions.
+    In simple words: "If something is true, do this. Otherwise, do that."
+
+    (Theory interview questions)
+
+    1.  Syntax for Ternary operator is condition ? value_if_true : value_if_false;
+
+    2.  The difference between 'if...else' and 'if...else if...else' is 'if...else' condition 
+        is used when we don't want to check multiple conditions we just rely on a single 
+        condition i.e. if that condition evaluates to true we execute the code inside if block 
+        and if false than the code inside the else block is executed a shorthand for if...else is
+        using Ternary operator. And if we want to check multiple conditions we use 'if...else if...else' 
+        chain.
+
+    3. When the conditon is simple you can make use of the ternary operator.
+
+    4. The output of the code is 'Beginner'
